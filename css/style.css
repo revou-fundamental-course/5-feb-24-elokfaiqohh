@@ -18,6 +18,17 @@ h2{
 }
 
 main{
+    margin: 100px 250px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #203d55;
+}
+
+label{
+    color: white;
+}
+
+#kalkulasi{
     margin: 50px auto;
     display: flex;
     flex-direction: row;
@@ -25,10 +36,16 @@ main{
     align-items: center;
 }
 
-input{
+#F{
+    display: flex;
+    align-items: center;
+}
+
+#celcius, #fahrenheit{
     height: 50px;
     width: 300px;
     border-radius: 10px;
+    margin: 10px;
 }
 
 button{
@@ -43,7 +60,14 @@ button:hover{
 }
 
 button:active{
-    transform: translateY(3px);
+    transform: translateY(2px);
+}
+
+#cara{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 100px;
 }
 
 #opsi{
@@ -51,5 +75,5 @@ button:active{
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 100px;
+    margin-top: 50px;
 }
