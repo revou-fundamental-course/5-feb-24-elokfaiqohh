@@ -13,23 +13,23 @@
     <main>
         <div id="kalkulasi">
             <div id="C">
-                <label for="celcius">Celsius = </label>
-                <input type="number" id="celcius">
-            </div>
-            <div id="konvert">
-                <button onclick="convert();">Konvert</button>
+                <label for="celcius">Celsius (°C) = </label>
+                <textarea id="celcius" cols="30" rows="10"></textarea>
             </div>
             <div id="F">
-                <label for="fahrenheit">Fahrenheit = </label>
-                <input type="number" id="fahrenheit">
+                <label for="fahrenheit">Fahrenheit (°F) = </label>
+                <textarea id="fahrenheit" cols="30" rows="10"></textarea>
             </div>
+        </div>
+        <div id="konvert">
+            <button onclick="convert();">Konvert</button>
         </div>
         <div id="cara">
             <label for="cara">Cara kalkulasi</label>
-            <textarea id="fahrenheit"></textarea>
+            <textarea id="cara" cols="30" rows="10"></textarea>
         </div>
         <div id="opsi">
-            <button>Reset</button>
+            <button onclick="reset()">Reset</button>
             <button>Reverse</button>
         </div>
     </main>

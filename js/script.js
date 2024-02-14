@@ -1,9 +1,17 @@
-const celcius = document.getElementById("celcius"),
-    fahrenheit = document.getElementById("fahrenheit");
-
-// window.addEventListener("load", () => celcius.fokus());
 
 function convert() {
-    let hasil = (celcius*1.8)+32;
-    document.getElementById("fahrenheit").innerHTML=hasil;
+    // ketika tombol konversi di klik akan menjalankan fungsi ini
+    celciusIsi = document.getElementById("celcius").value
+    fahrenheitIsi = document.getElementById("fahrenheit").value
+    celcius = document.getElementById("celcius")
+    fahrenheit = document.getElementById("fahrenheit")
+    cara = document.getElementById("cara")
+
+    fahrenheitIsi = (9/5) * celciusIsi + 32
+    fahrenheit.innerHTML = fahrenheitIsi
+
   }
+
+  function reset(){
+    window.location.reload();
+  } 
