@@ -13,25 +13,40 @@
     <main>
         <div id="kalkulasi">
             <div id="C">
-                <label for="celcius">Celsius (°C) = </label>
-                <textarea id="celcius" cols="30" rows="10"></textarea>
+                <label for="celcius">Suhu dalam  
+                    <select name="select" id="select">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                    </select>
+                </label>
+                <input id="input" cols="30" rows="10" placeholder="Masukkan suhu">
             </div>
             <div id="F">
-                <label for="fahrenheit">Fahrenheit (°F) = </label>
-                <textarea id="fahrenheit" cols="30" rows="10"></textarea>
+                <label for="hasil">Hasil </label>
+                <div class="hasil">
+                    <p id="hasil"></p>
+                </div>
             </div>
         </div>
         <div id="konvert">
             <button onclick="convert();">Konvert</button>
         </div>
-        <div id="cara">
-            <label for="cara">Cara kalkulasi</label>
-            <textarea id="cara" cols="30" rows="10"></textarea>
+        <div class="rumus">
+            <h4>Cara Kalkulasi</h4>
+            <textarea name="rumus" id="rumus" rows="3"></textarea>
         </div>
         <div id="opsi">
             <button onclick="reset()">Reset</button>
             <button>Reverse</button>
         </div>
+        <h4>Rumus Konversi</h4>
+        <div id="cara">
+            <div id="cara">
+                <p>(°F) = ( 9 / 5 ) * (°C) + 32</p>
+                <p>(°C) = (°F - 32) * 5 / 9</p>
+            </div>
+        </div>
+        
     </main>
 
 
