@@ -15,8 +15,8 @@
             <div id="C">
                 <label for="celcius">Suhu dalam  
                     <select name="select" id="select">
-                        <option value="celcius">Celcius</option>
-                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="celcius" id="cel">Celcius</option>
+                        <option value="fahrenheit" id="fah">Fahrenheit</option>
                     </select>
                 </label>
                 <input id="input" cols="30" rows="10" placeholder="Masukkan suhu">
@@ -37,7 +37,7 @@
         </div>
         <div id="opsi">
             <button onclick="reset()">Reset</button>
-            <button>Reverse</button>
+            <button onclick="reverse()">Reverse</button>
         </div>
         <h4>Rumus Konversi</h4>
         <div id="cara">
